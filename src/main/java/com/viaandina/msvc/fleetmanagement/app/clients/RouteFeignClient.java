@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.viaandina.msvc.fleetmanagement.app.dtos.RouteDTO;
 
-@FeignClient(name = "viaandina-scheduler-msvc", contextId = "routeClient", url = "localhost:57498")
+@FeignClient(name = "viaandina-scheduler-msvc", contextId = "routeClient")
 public interface RouteFeignClient {
 
     @GetMapping("/routes/{id}")
